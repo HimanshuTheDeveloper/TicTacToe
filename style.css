@@ -1,0 +1,103 @@
+body
+{
+    background-image: linear-gradient(to right,#bf758f, #eac0ff, #b39ad4);
+}
+#heading{
+    font-family:cursive;
+    font-size:32px;
+    font-weight:bold;
+    color:black;
+    border: 2px solid black;
+    display:inline;
+    background:silver;
+    padding: 10px 10px;
+    text-align:center;
+    
+    
+}
+
+.gameScreen
+{
+    background-color: gray;
+    height: 500px;
+    width: 500px;
+    margin: 2% auto;
+
+}
+.gameScreen .row
+{
+    background-color: #5b6fff;
+    height: 33.33%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.row .col
+{ 
+   border: 2px solid white;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin: 10px;
+   height: 85%;
+   font-size: 50px;
+   color: wheat;
+   transition: border-color 0.3s;
+   cursor: pointer;
+}
+
+.col:hover
+{
+    border-color: rgb(255, 136, 0);
+}
+
+.choice
+{
+    background-color: gray;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
+}
+.choice p
+{
+    font-size: 30px;
+}
+.valueAccepter
+{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    height: 100px;
+}
+div.visible
+{
+    display: flex;
+}
+.valueAccepter div
+{
+    background-color: black;
+    width: 40%;
+    height: 60%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    
+    
+}
+.valueAccepter div:hover
+{
+    background-color: rgb(104, 160, 20);
+}
+.choice
+{
+    tes
+}
