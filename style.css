@@ -1,32 +1,37 @@
 body
 {
-    background-image: linear-gradient(to right,#bf758f, #eac0ff, #b39ad4);
+    background-image:url("/img/png-background.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    text-align: center;
+    height:100vh;
+    
 }
 #heading{
-    font-family:cursive;
-    font-size:32px;
-    font-weight:bold;
-    color:black;
-    border: 2px solid black;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size:48px;
+    color:rgb(0, 0, 0);
     display:inline;
-    background:silver;
-    padding: 10px 10px;
-    text-align:center;
-    
+    background:none;
+    padding: 15px 15px;
+    top:35px;
+    position: relative;
     
 }
 
 .gameScreen
 {
-    background-color: gray;
+    background-color:none;
     height: 500px;
     width: 500px;
-    margin: 2% auto;
+    margin: 8% auto;
+    
 
 }
 .gameScreen .row
 {
-    background-color: #5b6fff;
+    background-color: rgba(60, 165, 151, 0.7);
     height: 33.33%;
     display: flex;
     position: relative;
@@ -40,17 +45,18 @@ body
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin: 10px;
+   margin: 15px;
    height: 85%;
    font-size: 50px;
-   color: wheat;
+   color: rgb(0, 0, 0);
    transition: border-color 0.3s;
    cursor: pointer;
+   border-radius:10px;
 }
 
 .col:hover
 {
-    border-color: rgb(255, 136, 0);
+    border-color: rgb(74, 255, 83);
 }
 
 .choice
