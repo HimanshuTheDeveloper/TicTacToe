@@ -1,6 +1,6 @@
 body
 {
-    background-image:url("/img/png-background.png");
+    background-image:url("./img/pngBackground.png");
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
@@ -41,6 +41,7 @@ body
 .row .col
 { 
    border: 2px solid white;
+   font-family: 'Balsamiq Sans', cursive;
    width: 100%;
    display: flex;
    justify-content: space-around;
@@ -102,8 +103,4 @@ div.visible
 .valueAccepter div:hover
 {
     background-color: rgb(104, 160, 20);
-}
-.choice
-{
-    tes
 }
