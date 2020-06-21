@@ -28,8 +28,44 @@ col.forEach(cell => {
 function checkWinner()
 {
 
-    console.log("checking");
     checkDiagonal();
+    checkVertical();
+    checkHorizontal();
+}
+
+function checkHorizontal()
+{
+    for(let i = 0; i < 3; i++)
+    {
+        console.log(`i = ${i}`);
+        if(col[0 + (i * 3)].innerText != "" &&
+            col[1 + (i * 3)].innerText != "" &&
+            col[2 + (i * 3)].innerText != "")
+        {
+            if(col[0 + (i * 3)].innerText == col[1 + (i * 3)].innerText &&
+                col[0 + (i * 3)].innerText == col[2 + (i * 3)].innerText)
+            {
+                console.log(`You Win: Horizontally row = ${i + 1}`);
+            }
+        }
+    }
+}
+function checkVertical()
+{
+    for(let i = 0; i < 3; i++)
+    {
+        console.log(`i = ${i}`);
+        if(col[0 + i].innerText != "" &&
+            col[3 + i].innerText != "" &&
+            col[6 + i].innerText != "")
+        {
+            if(col[0 + i].innerText == col[3 + i].innerText &&
+                col[0 + i].innerText == col[6 + i].innerText)
+            {
+                console.log(`You Win: Vertically col = ${i + 1}`);
+            }
+        }
+    }
 }
 
 function checkDiagonal() {
@@ -50,21 +86,15 @@ function checkDiagonal() {
         if(dg1[0] == dg1[1] && dg1[0] == dg1[2])
         {
             
-            console.log("You win");
-            return true;
+            console.log(`You Win: Main Diagonal`);
         }
     }
     if(dg2[0] != "" && dg2[1] != "" && dg2[2] != "" )
     {
         if(dg2[0] == dg2[1] && dg2[0] == dg2[2])
         {
-            console.log("You win");
-            return true;
+            console.log(`You Win: Anti Diagonal`);
         }
-    }
-    else
-    {
-        return false;
     }
 }
 
