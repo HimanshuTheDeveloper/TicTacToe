@@ -25,7 +25,7 @@ body
     background-color:none;
     height: 500px;
     width: 500px;
-    margin: 8% auto;
+    margin: 40px auto;
     
 
 }
@@ -103,4 +103,24 @@ div.visible
 .valueAccepter div:hover
 {
     background-color: rgb(104, 160, 20);
+}
+
+.horLine
+{
+    background-color: brown;
+    height: 10px;
+    border-radius: 10px;
+    width: 0%;
+    position: relative;
+    top: 17%;
+    left: 10%;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+
+
+.active
+{
+    width: 80%;
 }

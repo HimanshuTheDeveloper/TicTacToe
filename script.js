@@ -32,6 +32,30 @@ function checkWinner()
     checkVertical();
     checkHorizontal();
 }
+function win(direction, line, isWin)
+{
+    console.log(`Direction: ${direction} line: ${line} isWin ${isWin}`);
+
+    if(direction == 'hor')
+    {
+        let horLine = document.querySelector('.horLine');
+        horLine.classList.add('active');
+
+        if(line == 1)
+        {
+        }
+        if(line == 2)
+        {
+            horLine.style.top = '50%';
+
+        }
+        if(line == 3)
+        {
+            horLine.style.top = '83%';
+
+        }
+    }
+}
 
 function checkHorizontal()
 {
@@ -45,6 +69,8 @@ function checkHorizontal()
             if(col[0 + (i * 3)].innerText == col[1 + (i * 3)].innerText &&
                 col[0 + (i * 3)].innerText == col[2 + (i * 3)].innerText)
             {
+                win('hor', i + 1, true);
+                
                 console.log(`You Win: Horizontally row = ${i + 1}`);
             }
         }
