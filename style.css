@@ -26,7 +26,7 @@ body
     height: 500px;
     width: 500px;
     margin: 40px auto;
-    transform: translateY(-400px);
+    
     
 
 }
@@ -54,6 +54,7 @@ body
    transition: border-color 0.3s;
    cursor: pointer;
    border-radius:10px;
+
 }
 
 .col:hover
@@ -120,14 +121,15 @@ div.visible
 }
 .verLine
 {
-    height: 80%;
+    height: 1%;
     width: 10px;
-    border-radius: 10px;
-    background-color: chartreuse;
+    background-color: brown;
+    opacity: 0;
     position: relative;
-    top: 300px;
+    top: 15%;
     z-index: 1;
     left: 16%;
+    transition:  transform 0.5s ease-in-out;
 }
 
 
@@ -138,5 +140,9 @@ div.visible
 
 .activeVer
 {
-    height: 80%;
+    /* height: 80%; */
+    opacity: 1;
+    top: 50%;
+    transform: scaleY(80);
+    
 }

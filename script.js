@@ -71,7 +71,7 @@ function win(direction, line, isWin)
         }
         if(line == 3)
         {
-            horLine.style.top = '82%';
+            horLine.style.left = '82%';
 
         }
     }
@@ -108,6 +108,7 @@ function checkVertical()
             if(col[0 + i].innerText == col[3 + i].innerText &&
                 col[0 + i].innerText == col[6 + i].innerText)
             {
+                win('ver', i + 1, true);
                 console.log(`You Win: Vertically col = ${i + 1}`);
             }
         }
