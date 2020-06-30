@@ -46,12 +46,12 @@ function win(direction, line, isWin)
         }
         if(line == 2)
         {
-            horLine.style.top = '50%';
+            horLine.style.top = '53%';
 
         }
         if(line == 3)
         {
-            horLine.style.top = '83%';
+            horLine.style.top = '86%';
 
         }
     }
@@ -74,6 +74,16 @@ function win(direction, line, isWin)
             horLine.style.left = '82%';
 
         }
+    }
+    else if(direction == 'mainDiagonal')
+    {
+        let d = document.querySelector('.diagonal');
+        d.classList.add('activeMainDiagonal');
+    }
+    else if(direction == 'antiDiagonal')
+    {
+        let d = document.querySelector('.diagonal');
+        d.classList.add('activeAntiDiagonal');
     }
 }
 
@@ -132,7 +142,7 @@ function checkDiagonal() {
     {
         if(dg1[0] == dg1[1] && dg1[0] == dg1[2])
         {
-            
+            win('mainDiagonal', 0, true);
             console.log(`You Win: Main Diagonal`);
         }
     }
@@ -140,6 +150,7 @@ function checkDiagonal() {
     {
         if(dg2[0] == dg2[1] && dg2[0] == dg2[2])
         {
+            win('antiDiagonal', 0, true);
             console.log(`You Win: Anti Diagonal`);
         }
     }
