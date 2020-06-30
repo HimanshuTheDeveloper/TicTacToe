@@ -26,6 +26,7 @@ body
     height: 500px;
     width: 500px;
     margin: 40px auto;
+    transform: translateY(-400px);
     
 
 }
@@ -115,12 +116,27 @@ div.visible
     top: 17%;
     left: 10%;
     z-index: 1;
-    transition: all 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
-
+.verLine
+{
+    height: 80%;
+    width: 10px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    position: relative;
+    top: 300px;
+    z-index: 1;
+    left: 16%;
+}
 
 
 .active
 {
     width: 80%;
+}
+
+.activeVer
+{
+    height: 80%;
 }

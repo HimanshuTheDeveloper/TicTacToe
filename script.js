@@ -55,6 +55,26 @@ function win(direction, line, isWin)
 
         }
     }
+
+    else if(direction == 'ver')
+    {
+        let horLine = document.querySelector('.verLine');
+        horLine.classList.add('activeVer');
+
+        if(line == 1)
+        {
+        }
+        if(line == 2)
+        {
+            horLine.style.left = '49%';
+
+        }
+        if(line == 3)
+        {
+            horLine.style.top = '82%';
+
+        }
+    }
 }
 
 function checkHorizontal()
